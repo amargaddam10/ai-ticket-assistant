@@ -49,6 +49,8 @@ const io = new Server(server, {
       'http://localhost:3000',
       'http://localhost:5173',
       'https://ai-ticket-frontend-azure.vercel.app',
+      'https://ai-ticket-frontend-853mog6r7-amar-s-projects-d9c8be2a.vercel.app', // ADD THIS
+      /^https:\/\/ai-ticket-frontend.*\.vercel\.app$/,
     ],
     methods: ['GET', 'POST'],
     credentials: true,
@@ -64,6 +66,8 @@ app.use(
       'http://localhost:5173',
       'http://localhost:5000',
       'https://ai-ticket-frontend-azure.vercel.app',
+      'https://ai-ticket-frontend-853mog6r7-amar-s-projects-d9c8be2a.vercel.app', // ADD THIS LINE
+      /^https:\/\/ai-ticket-frontend.*\.vercel\.app$/,
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
