@@ -13,8 +13,7 @@ export const SocketProvider = ({ children }: { children: ReactNode }) => {
   const [socket, setSocket] = useState<Socket | null>(null);
 
   useEffect(() => {
-    const SOCKET_URL =
-      (import.meta as any)?.env?.VITE_SOCKET_URL || 'http://localhost:5000';
+    const SOCKET_URL = 'https://ai-ticket-backend-hoz7.onrender.com';
 
     const s = io(SOCKET_URL, {
       path: '/socket.io',
